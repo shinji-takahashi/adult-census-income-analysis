@@ -145,7 +145,7 @@ SHAP 値を用いてモデルの予測根拠を可視化した。
 Feature Importance と Permutation Importance を並べて比較すると、両者の順位に違いが見られる。
 
 ![Feature Importance vs Permutation Importance](images/feature_importance_comparison.png)
-*図5: LightGBM の Feature Importance（左）と Permutation Importance（右）の比較。Feature Importance では `relationship` が最上位であるが、Permutation Importance では `capital_gain`・`age` が上位となっている。*
+*図5: LightGBM の Feature Importance（上）と Permutation Importance（下）の比較。Feature Importance では `relationship` が最上位であるが、Permutation Importance では `capital_gain`・`age` が上位となっている。*
 
 Feature Importance で `relationship` が最上位となった一方、Permutation Importance では `capital_gain` と `age` が上位となった。これは `relationship` と `marital_status` の間に強い相関があり、一方の特徴量をシャッフルしても他方が補完するため、Permutation Importance では過小評価されやすいためと考えられる。
 
