@@ -32,7 +32,7 @@
   ├─ age → age_bin（~19 / 20~29 / 30~39 / 40~49 / 50~59 / 60~）
   ├─ education → education_level（Low / Middle / High）
   ├─ hours_per_week → hours_bin（Part-time / Full-time / Overtime / Extreme）
-  ├─ capital_gain / capital_loss → 対数変換（log1p）
+  ├─ capital_gain / capital_loss → 対数変換（log1p） → 標準化
   └─ カテゴリ変数のエンコーディング
   ↓
 モデル構築・評価（Logistic Regression / Random Forest / LightGBM）
