@@ -16,7 +16,7 @@
 ## 使用データ
 
 - **データソース**: UCI Machine Learning Repository — Adult Dataset
-- **サンプル数**: 約 48,000 件
+- **サンプル数**: 約 33,000 件（学習データ: 約 26,000 件、テストデータ: 約 7,000 件 ）
 - **対象期間**: 1994年（米国国勢調査）
 - **目的変数**: `income`（`>50K` / `<=50K`）
 - **主な特徴量**: age, education, occupation, marital_status, capital_gain, capital_loss, hours_per_week, など
