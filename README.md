@@ -86,6 +86,11 @@ statsmodels を用いたロジスティック回帰モデルのオッズ比（�
 - High（高学歴）: **+16%**
 - Low（低学歴）: **−7%**
 
+**週労働時間（基準: Full-time）**
+
+- Overtime/Extreme: **+8%**
+- Part-time: **-4%**
+
 **職業（基準: Adm-clerical）**
 
 - Exec-managerial: **+13%**（最も高い）
