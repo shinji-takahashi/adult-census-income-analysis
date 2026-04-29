@@ -95,6 +95,11 @@ statsmodels を用いたロジスティック回帰モデルのオッズ比（�
 
 - Exec-managerial: **+13%**（最も高い）
 - Prof-specialty: **+9%**
+- Protective-serv: **+7%**
+- Tech-support: **+7%**
+- Transport-moving: **-4%**
+- Handlers-cleaners: **-5%**
+- Machine-op-inspct: **-5%**
 - Farming-fishing: **−10%**（最も低い）
 
 **婚姻状況（基準: Never-married）**
@@ -107,7 +112,6 @@ statsmodels を用いたロジスティック回帰モデルのオッズ比（�
 
 **その他の傾向**
 
-- 週労働時間が多いほど（Overtime / Extreme）高収入オッズが高い
 - 自営（法人）はプライベートより高収入傾向、無法人自営は低い傾向
 - 米国外出身（中国・ベトナム・南部）は米国出身より低収入傾向
 
