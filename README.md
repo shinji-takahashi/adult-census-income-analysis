@@ -152,7 +152,7 @@ statsmodels を用いたロジスティック回帰モデルのオッズ比（�
 Feature Importance と Permutation Importance を並べて比較すると、両者の順位に違いが見られる。
 
 ![Feature Importance vs Permutation Importance](images/feature_importance_comparison.png)
-*図5: LightGBM の Feature Importance（上）と Permutation Importance（下）の比較。Feature Importance では `relationship` が最上位であるが、Permutation Importance では `capital_gain`・`age` が上位となっている。*
+*図4: LightGBM の Feature Importance（上）と Permutation Importance（下）の比較。Feature Importance では `relationship` が最上位であるが、Permutation Importance では `capital_gain`・`age` が上位となっている。*
 
 Feature Importance で `relationship` が最上位となった一方、Permutation Importance では `capital_gain` と `age` が上位となった。これは `relationship` と `marital_status` の間に強い相関があり、一方の特徴量をシャッフルしても他方が補完するため、Permutation Importance では過小評価されやすいためと考えられる。
 
@@ -175,7 +175,7 @@ SHAP 値を用いてモデルの予測根拠を可視化した。
 - `marital_status`・`relationship`・`occupation`・`sex`・`workclass`・`race`・`native_country`などはカテゴリ変数であり、高低の方向解釈ができないため灰色となっている。
 
 ![SHAP Summary Plot](images/shap_summary.png)
-*図4: SHAP Summary Plot（LightGBM）。各点は1サンプルを表し、色が赤いほど特徴量の値が大きく、青いほど小さい。横軸はSHAP値（正が高収入方向への寄与）。*
+*図5: SHAP Summary Plot（LightGBM）。各点は1サンプルを表し、色が赤いほど特徴量の値が大きく、青いほど小さい。横軸はSHAP値（正が高収入方向への寄与）。*
 
 ### capital_gain / capital_loss の解釈上の注意
 
