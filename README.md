@@ -258,18 +258,20 @@ SHAP 値を用いてモデルの予測根拠を可視化した。
 ```
 .
 ├── data/
-│   └── adult.csv                # 元データ（Kaggle からダウンロード）
+│   └── adult.csv                         # 元データ（Kaggle からダウンロード）
 ├── images/
-│   ├── income_distribution.png  # 図1: 収入分布
-│   ├── model_comparison.png     # 図2: モデル比較
-│   ├── odds_ratio.png           # 図3: オッズ比
-│   ├── shap_summary.png         # 図4: SHAP Summary Plot
-│   └── subgroup_analysis.png    # 図5: サブグループ分析
+│   ├── income_distribution.png           # 図1: 収入分布
+│   ├── model_comparison.png              # 図2: モデル比較
+│   ├── odds_ratio.png                    # 図3: オッズ比
+│   ├── shap_summary.png                  # 図4: SHAP Summary Plot
+│   ├── feature_importance_comparison.png # 図5: Feature Importance 比較
+│   ├── subgroup_analysis.png             # 図6: サブグループ分析
+│   └── factor_analysis.png               # 図7: 要因分析
 ├── notebooks/
-│   └── EDA.ipynb                # 分析メインノートブック
-│   ├── statsmodels.ipynb        # 
-│   ├── scikit-learn.ipynb       # 
-│   ├── LightGBM.ipynb           #  
+│   ├── EDA.ipynb                         # 探索的データ分析
+│   ├── statsmodels.ipynb                 # ロジスティック回帰・オッズ比
+│   ├── scikit-learn.ipynb                # 機械学習モデル比較
+│   └── LightGBM.ipynb                    # LightGBM・SHAP分析
 └── README.md
 ```
 
