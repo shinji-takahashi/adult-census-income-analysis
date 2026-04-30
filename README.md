@@ -249,7 +249,7 @@ SHAP 値を用いてモデルの予測根拠を可視化した。
 ## 使用技術
 
 - **言語**: Python 3.x
-- **ライブラリ**: pandas / numpy / scikit-learn / statsmodels / lightgbm / shap / matplotlib / seaborn
+- **ライブラリ**: pandas / numpy / statsmodels / scikit-learn / lightgbm / shap / matplotlib /
 
 -----
 
