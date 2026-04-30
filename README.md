@@ -147,21 +147,7 @@ statsmodels を用いたロジスティック回帰モデルのオッズ比（�
 
 -----
 
-## SHAP 分析（LightGBM）
-
-SHAP 値を用いてモデルの予測根拠を可視化した。
-
-- **age**: 若いほど低所得方向、年齢が高いほど高所得方向に寄与。最も影響力の大きい特徴量。
-- **capital_gain**: 資本収益が大きい個人ほど高所得方向へ強く寄与。`capital_gain`は、資産を持つ一部の個人に対して強い影響を与えるが、全体的な重要度では`age`が最上位である。
-- **education_num**: 学歴が低いほど低所得方向、学歴が高いほど高所得方向に寄与。
-- **hours_per_week**: 労働時間が短いほど低所得方向、労働時間が長いほど高所得方向に寄与。
-- **capital_loss**: 資本損失が大きい個人は資産家である可能性が高く、高所得方向に寄与。
-- `marital_status`・`relationship`・`occupation`・`sex`・`workclass`・`race`・`native_country`などはカテゴリ変数であり、高低の方向解釈ができないため灰色となっている。
-
-![SHAP Summary Plot](images/shap_summary.png)
-*図4: SHAP Summary Plot（LightGBM）。各点は1サンプルを表し、色が赤いほど特徴量の値が大きく、青いほど小さい。横軸はSHAP値（正が高収入方向への寄与）。*
-
-### 重要特徴量の総合評価
+## 重要特徴量の総合評価（LightGBM）
 
 Feature Importance と Permutation Importance を並べて比較すると、両者の順位に違いが見られる。
 
@@ -176,6 +162,20 @@ Feature Importance で `relationship` が最上位となった一方、Permutati
 2. **age**（年齢）
 3. **marital_status**（婚姻状況）
 4. **education_num**（学歴年数）
+
+## SHAP 分析（LightGBM）
+
+SHAP 値を用いてモデルの予測根拠を可視化した。
+
+- **age**: 若いほど低所得方向、年齢が高いほど高所得方向に寄与。最も影響力の大きい特徴量。
+- **capital_gain**: 資本収益が大きい個人ほど高所得方向へ強く寄与。`capital_gain`は、資産を持つ一部の個人に対して強い影響を与えるが、全体的な重要度では`age`が最上位である。
+- **education_num**: 学歴が低いほど低所得方向、学歴が高いほど高所得方向に寄与。
+- **hours_per_week**: 労働時間が短いほど低所得方向、労働時間が長いほど高所得方向に寄与。
+- **capital_loss**: 資本損失が大きい個人は資産家である可能性が高く、高所得方向に寄与。
+- `marital_status`・`relationship`・`occupation`・`sex`・`workclass`・`race`・`native_country`などはカテゴリ変数であり、高低の方向解釈ができないため灰色となっている。
+
+![SHAP Summary Plot](images/shap_summary.png)
+*図4: SHAP Summary Plot（LightGBM）。各点は1サンプルを表し、色が赤いほど特徴量の値が大きく、青いほど小さい。横軸はSHAP値（正が高収入方向への寄与）。*
 
 ### capital_gain / capital_loss の解釈上の注意
 
