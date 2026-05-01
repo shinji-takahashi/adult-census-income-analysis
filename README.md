@@ -108,8 +108,8 @@ statsmodels を用いたロジスティック回帰モデルのオッズ比（�
 
 **婚姻状況（基準: 既婚・配偶者同居）**
 - 死別（Widowed）: **−9%**
-- 既婚・配偶者別居（Married-spouse-absent）: **−10%**
-- 別居（Separated）: **−11%**
+- 既婚・配偶者不在（Married-spouse-absent）: **−10%**  ※単身赴任・収監等
+- 別居・離婚協議中（Separated）: **−11%**
 - 未婚（Never-married）: **−12%**
 - 離婚（Divorced）: **−13%**
 
