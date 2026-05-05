@@ -229,10 +229,12 @@ SHAP 値を用いてモデルの予測根拠を可視化した。
 *図8: 典型的米国人（37歳・既婚・事務職）の education_num を
 1〜16 で変化させたときの高収入確率推移*
 
-### ③ 感度分析：婚姻状況の変化
-![婚姻感度分析](images/whatif_marriage.png)
-*図9: 同一人物（高卒・事務職・37歳男性）の婚姻状況を変化させたときの比較。
-既婚（配偶者同居）とその他の婚姻状況との差が明確に現れる。*
+### ③ 感度分析：職業の変化
+![職業感度分析](images/whatif_occupation.png)
+*図9: 大卒（education_num=13）・37歳・既婚・男性で固定し、
+職業のみを変化させたときの高収入確率比較。
+オレンジは参照カテゴリ（事務職）。
+同じ大卒でも経営層・管理職と農業・漁業では確率に大きな差が生じることが確認できる。*
 
 -----
 
@@ -299,7 +301,10 @@ SHAP 値を用いてモデルの予測根拠を可視化した。
 │   ├── feature_importance_comparison.png # 図4: Feature Importance 比較
 │   ├── shap_summary.png                  # 図5: SHAP Summary Plot
 │   ├── subgroup_analysis.png             # 図6: サブグループ分析
-│   └── factor_analysis.png               # 図7: 要因分析
+│   ├── whatif_personas.png               # 図7: ペルソナ比較
+│   ├── whatif_education.png              # 図8: 学歴感度分析
+│   └── whatif_occupation.png             # 図9: 職業感度分析
+│   └── factor_analysis.png               # 図10: 要因分析
 ├── notebooks/
 │   ├── EDA.ipynb                         # 探索的データ分析
 │   ├── statsmodels.ipynb                 # ロジスティック回帰・オッズ比
