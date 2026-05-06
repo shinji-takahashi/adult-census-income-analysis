@@ -102,8 +102,8 @@ statsmodels を用いたロジスティック回帰モデルのオッズ比（�
 - 保安職（警察・消防など）（Protective-serv）: **+7%**
 - 技術サポート（Tech-support）: **+7%**
 - 輸送・運転（Transport-moving）: **−4%**
-- 運搬・清掃（Handlers-cleaners）: **−5%**
 - 機械オペレーター（Machine-op-inspct）: **−5%**
+- 運搬・清掃（Handlers-cleaners）: **−5%**
 - 農業・漁業（Farming-fishing）: **−10%**（最も低い）
 
 **婚姻状況（基準: 既婚・配偶者同居）**
