@@ -99,7 +99,7 @@ statsmodels を用いたロジスティック回帰モデルのオッズ比（�
 **職業（基準: 事務職）**
 - 経営層・管理職（Exec-managerial）: **+13%**（最も高い）
 - 専門職（医師・弁護士・会計士・研究者など）（Prof-specialty）: **+9%**
-- 保安職（Protective-serv）: **+7%**
+- 保安職（警察・消防など）（Protective-serv）: **+7%**
 - 技術サポート（Tech-support）: **+7%**
 - 輸送・運転（Transport-moving）: **−4%**
 - 運搬・清掃（Handlers-cleaners）: **−5%**
