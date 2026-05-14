@@ -50,7 +50,7 @@
 
 |モデル                              |Accuracy |ROC-AUC  |
 |---------------------------------|---------|---------|
-|Logistic Regression（statsmodels） |0.842    |0.900    |
+|Logistic Regression（statsmodels） |0.849    |0.906    |
 |Logistic Regression（scikit-learn）|0.851    |0.910    |
 |Random Forest                    |0.863    |0.918    |
 |**LightGBM**                     |**0.874**|**0.931**|
